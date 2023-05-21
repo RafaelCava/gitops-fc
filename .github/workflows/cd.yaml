@@ -25,9 +25,7 @@ jobs:
         password: ${{ secrets.DOCKERHUB_TOKEN }}
 
     - name: Build and push
-      uses: docker/build-push-action@v1.1.0
+      uses: docker/build-push-action@v4
       with:
-        tags: ${{ secrets.DOCKER_USERNAME }}, latest
-        username: ${{ secrets.DOCKERHUB_USERNAME }}
-        password: ${{ secrets.DOCKERHUB_TOKEN }}
-        repository: ${{ secrets.DOCKER_USERNAME }}/gitopsfc
+        push: true
+        tags: ${{ secrets.DOCKER_USERNAME }}/gitopsfc:latest
