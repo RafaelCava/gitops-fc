@@ -28,4 +28,4 @@ jobs:
       uses: docker/build-push-action@v4
       with:
         push: true
-        tags: ${{ github.sha }}, latest
+        tags: ${{ secrets.DOCKERHUB_USERNAME }}, latest
