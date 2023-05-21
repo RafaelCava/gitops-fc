@@ -27,7 +27,7 @@ jobs:
     - name: Build and push
       uses: docker/build-push-action@v1.1.0
       with:
-        tags: ${{ github.sha }}, latest
+        tags: ${{ secrets.DOCKER_USERNAME }}, latest
         username: ${{ secrets.DOCKERHUB_USERNAME }}
         password: ${{ secrets.DOCKERHUB_TOKEN }}
         repository: ${{ secrets.DOCKER_USERNAME }}/gitopsfc
