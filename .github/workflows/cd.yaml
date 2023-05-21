@@ -28,4 +28,4 @@ jobs:
       uses: docker/build-push-action@v4
       with:
         push: true
-        tags: latest
+        tags: rafaelcaval1/gitopsfc:latest
