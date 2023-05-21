@@ -8,4 +8,4 @@ resources:
 images:
 - name: goserver
   newName: rafaelcaval1/gitops
-  newTag: latest
+  newTag: 9b2fc366b3a82213a7243385f609422f6057785f
