@@ -40,7 +40,7 @@ jobs:
         DOCKER_USERNAME: ${{ secrets.DOCKERHUB_USERNAME }}
       run: |
         cd k8s
-        kustomize edit set image goserver=$DOCKER_USERNAME/gitops:$GITHUB_SHA
+        kustomize edit set image goserver=$DOCKER_USERNAME/gitopsfc:$GITHUB_SHA
       
     - name: Commit
       run: |
