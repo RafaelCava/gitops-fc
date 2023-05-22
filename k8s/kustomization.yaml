@@ -7,5 +7,5 @@ resources:
 
 images:
 - name: goserver
-  newName: rafaelcaval1/gitops
-  newTag: 9b2fc366b3a82213a7243385f609422f6057785f
+  newName: rafaelcaval1/gitopsfc
+  newTag: ba9f493f0c500f41ce8546b056ed028a3b1d1c59
